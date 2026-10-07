@@ -1,0 +1,1037 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pools for Modern Outdoor Spaces</title>
+    <meta name="description" content="Explore pools and pool solutions for creating a comfortable and enjoyable outdoor space. Discover useful ideas and information for your pool project.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #26343d;
+            background: #eef9fc;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #ffffff;
+            padding: 18px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 18px rgba(30, 100, 130, 0.10);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .logo {
+            color: #075b78;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+
+        .logo span {
+            color: #18a9c7;
+        }
+
+        nav a {
+            color: #3d6472;
+            margin-left: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #0b9fbd;
+        }
+
+        /* Hero */
+        .hero {
+            background:
+                radial-gradient(circle at 80% 15%, rgba(255,255,255,0.75), transparent 28%),
+                radial-gradient(circle at 10% 90%, rgba(112,215,232,0.30), transparent 30%),
+                linear-gradient(135deg, #dff7fb 0%, #b8eaf3 48%, #8ed9e7 100%);
+            color: #123b4a;
+            padding: 95px 0 105px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.25);
+            right: -160px;
+            bottom: -190px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 55px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero small {
+            display: inline-block;
+            color: #087c99;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: 54px;
+            line-height: 1.12;
+            margin-bottom: 22px;
+            max-width: 700px;
+            color: #083c50;
+        }
+
+        .hero h1 span {
+            color: #079dbb;
+        }
+
+        .hero p {
+            color: #456873;
+            font-size: 18px;
+            max-width: 690px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #078eac;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #056f88;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #5daabb;
+            color: #07516a;
+            background: rgba(255,255,255,0.35);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.70);
+        }
+
+        .hero-card {
+            background: rgba(255,255,255,0.65);
+            border: 1px solid rgba(255,255,255,0.85);
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 18px 45px rgba(29, 111, 135, 0.14);
+            backdrop-filter: blur(8px);
+        }
+
+        .hero-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #10485b;
+        }
+
+        .hero-card p {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #54717b;
+        }
+
+        .hero-stat {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-top: 18px;
+        }
+
+        .stat-icon {
+            width: 43px;
+            height: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0da7c2;
+            color: #ffffff;
+            border-radius: 50%;
+            font-weight: 900;
+        }
+
+        /* General */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading span {
+            color: #078ea9;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            color: #103f50;
+            font-size: 36px;
+            line-height: 1.2;
+            margin: 10px 0 15px;
+        }
+
+        .section-heading p {
+            color: #687f87;
+        }
+
+        /* Intro */
+        .intro {
+            background: #ffffff;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            color: #103f50;
+            margin-bottom: 18px;
+        }
+
+        .intro p {
+            margin-bottom: 17px;
+            color: #617780;
+        }
+
+        .highlight-box {
+            background: #e8f8fb;
+            border-left: 5px solid #0ba2bd;
+            padding: 22px;
+            border-radius: 8px;
+            margin-top: 25px;
+        }
+
+        .highlight-box strong {
+            color: #124c5d;
+        }
+
+        .keyword-link {
+            color: #078ea9;
+            font-weight: 700;
+        }
+
+        .visual-box {
+            min-height: 370px;
+            border-radius: 20px;
+            background:
+                radial-gradient(circle at 30% 25%, rgba(255,255,255,0.65), transparent 20%),
+                linear-gradient(145deg, #72d9e7 0%, #20abc5 48%, #08728f 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            padding: 30px;
+            box-shadow: 0 18px 40px rgba(16, 113, 138, 0.16);
+        }
+
+        .visual-box::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.13);
+            top: -70px;
+            right: -60px;
+        }
+
+        .visual-label {
+            position: relative;
+            color: #ffffff;
+            z-index: 2;
+        }
+
+        .visual-label h3 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .visual-label p {
+            color: #e4f8fb;
+        }
+
+        /* Cards */
+        .cards-section {
+            background: #eef9fc;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 13px;
+            border: 1px solid #d8edf2;
+            box-shadow: 0 10px 30px rgba(12, 93, 116, 0.06);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 16px 35px rgba(12, 93, 116, 0.11);
+        }
+
+        .card-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: #e2f6fa;
+            color: #078da9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #123f50;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #697e85;
+            font-size: 15px;
+        }
+
+        /* Guide */
+        .guide {
+            background: linear-gradient(135deg, #d9f5fa 0%, #a8e1eb 100%);
+            color: #123b49;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .guide h2 {
+            font-size: 37px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            color: #0b4254;
+        }
+
+        .guide p {
+            color: #56737d;
+        }
+
+        .steps {
+            display: grid;
+            gap: 17px;
+        }
+
+        .step {
+            display: flex;
+            gap: 17px;
+            background: rgba(255,255,255,0.65);
+            border: 1px solid rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 22px rgba(24, 108, 127, 0.07);
+        }
+
+        .step-number {
+            min-width: 37px;
+            height: 37px;
+            border-radius: 50%;
+            background: #078fae;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            font-size: 17px;
+            margin-bottom: 3px;
+            color: #154859;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #64808a;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #ffffff;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #dce9ed;
+            padding: 23px 0;
+        }
+
+        .faq-item h3 {
+            color: #143f50;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: #6c7e84;
+            font-size: 15px;
+        }
+
+        /* Contact */
+        .contact {
+            background: #eaf7fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid #dcecef;
+        }
+
+        .contact-card h2 {
+            color: #123f50;
+            margin-bottom: 15px;
+        }
+
+        .contact-card > p {
+            color: #687c83;
+            margin-bottom: 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            padding: 14px 0;
+            border-bottom: 1px solid #edf3f4;
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #183f4e;
+            margin-bottom: 2px;
+        }
+
+        .contact-item span,
+        .contact-item a {
+            color: #687b82;
+            font-size: 15px;
+        }
+
+        .contact-item a:hover {
+            color: #0796b2;
+        }
+
+        .location-box {
+            background: linear-gradient(135deg, #58c9da, #087e9c);
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(18, 109, 130, 0.13);
+        }
+
+        .location-box h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .location-box p {
+            color: #e2f8fb;
+            margin-bottom: 25px;
+        }
+
+        /* Footer */
+        footer {
+            background: #083748;
+            color: #b9d8df;
+            padding: 30px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-brand {
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .footer-brand span {
+            color: #55d1e1;
+        }
+
+        footer p {
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-grid,
+            .intro-grid,
+            .guide-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hero h1 {
+                font-size: 44px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 70px 0 75px;
+            }
+
+            .hero h1 {
+                font-size: 37px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .section-heading h2,
+            .intro h2,
+            .guide h2 {
+                font-size: 30px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .visual-box {
+                min-height: 280px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav">
+            <a href="#home" class="logo">Pool<span>.Net</span></a>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#guide">Guide</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+
+            <div>
+                <small>Pool Inspiration & Information</small>
+
+                <h1>
+                    Discover Better Ideas for
+                    <span>Pools</span>
+                    and Outdoor Living
+                </h1>
+
+                <p>
+                    A well-planned pool can turn an outdoor area into a welcoming
+                    place for relaxation, recreation, and quality time. Explore
+                    useful ideas and practical considerations before starting
+                    your next pool project.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Explore More</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <h3>Planning Your Pool Space</h3>
+
+                <p>
+                    From choosing the right concept to considering available
+                    space, maintenance, and everyday use, thoughtful planning
+                    helps create a more enjoyable outdoor environment.
+                </p>
+
+                <div class="hero-stat">
+                    <div class="stat-icon">01</div>
+                    <div>
+                        <strong>Consider Your Space</strong><br>
+                        <span>Plan around your outdoor area.</span>
+                    </div>
+                </div>
+
+                <div class="hero-stat">
+                    <div class="stat-icon">02</div>
+                    <div>
+                        <strong>Think Long Term</strong><br>
+                        <span>Consider comfort and maintenance.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="intro" id="about">
+        <div class="container intro-grid">
+
+            <div>
+                <h2>Creating an Outdoor Space You Can Enjoy</h2>
+
+                <p>
+                    Pools can become an important part of an outdoor lifestyle,
+                    offering a dedicated area where people can unwind, enjoy
+                    leisure time, and make the most of their surroundings.
+                </p>
+
+                <p>
+                    Selecting the right pool concept involves more than simply
+                    choosing a design. Available space, intended use, practical
+                    requirements, and ongoing care can all influence the final
+                    decision.
+                </p>
+
+                <div class="highlight-box">
+                    <strong>
+                        Explore the possibilities and choose a pool concept
+                        that fits naturally into your outdoor environment.
+                    </strong>
+                </div>
+
+                <p style="margin-top: 20px;">
+                    If you are researching
+                    <a href="https://pool.net/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="keyword-link">pools</a>,
+                    consider the available space, intended use, maintenance
+                    needs, and overall outdoor design before making a decision.
+                </p>
+            </div>
+
+            <div class="visual-box">
+                <div class="visual-label">
+                    <h3>Outdoor Comfort</h3>
+                    <p>Thoughtful planning for enjoyable pool spaces.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="cards-section" id="solutions">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>Explore Your Options</span>
+                <h2>Important Points to Consider</h2>
+                <p>
+                    A successful pool project starts with understanding the
+                    practical and lifestyle factors that matter to you.
+                </p>
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Available Space</h3>
+                    <p>
+                        Consider the dimensions and layout of your outdoor area.
+                        A suitable pool concept should work comfortably within
+                        the space while leaving room for surrounding features.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>Everyday Use</h3>
+                    <p>
+                        Think about how the pool will be used. Recreation,
+                        relaxation, family activities, or occasional enjoyment
+                        can all influence the type of setup you prefer.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Maintenance</h3>
+                    <p>
+                        Regular care is an important part of pool ownership.
+                        Planning for cleaning, water care, and general upkeep
+                        can make long-term use more convenient.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">04</div>
+                    <h3>Design Direction</h3>
+                    <p>
+                        Consider how the pool will complement your garden,
+                        terrace, patio, or other outdoor elements for a
+                        balanced overall appearance.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">05</div>
+                    <h3>Comfort</h3>
+                    <p>
+                        Features surrounding the pool can influence how
+                        comfortable and practical the space feels during
+                        everyday use.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">06</div>
+                    <h3>Long-Term Planning</h3>
+                    <p>
+                        Looking ahead can help you make decisions that remain
+                        suitable as your needs, preferences, and outdoor space
+                        evolve.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide -->
+    <section class="guide" id="guide">
+        <div class="container guide-grid">
+
+            <div>
+                <h2>A Simple Approach to Pool Planning</h2>
+
+                <p>
+                    Taking a structured approach can make it easier to compare
+                    possibilities and identify the features that are most
+                    relevant to your project.
+                </p>
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3>Define Your Goals</h3>
+                        <p>
+                            Decide what you want the pool area to provide and
+                            how you expect to use it.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3>Review the Available Area</h3>
+                        <p>
+                            Look at the shape, size, access, and surrounding
+                            layout of your outdoor space.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3>Compare Suitable Options</h3>
+                        <p>
+                            Consider different approaches and identify which
+                            features fit your requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h3>Plan for Ongoing Care</h3>
+                        <p>
+                            Include regular cleaning, maintenance, and general
+                            pool care in your long-term plans.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+
+            <div class="section-heading">
+                <span>Frequently Asked Questions</span>
+                <h2>Common Questions About Pools</h2>
+                <p>
+                    A few helpful points to consider when researching your
+                    pool project.
+                </p>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <h3>What should I consider before choosing a pool?</h3>
+                    <p>
+                        Consider your available space, intended use, design
+                        preferences, maintenance requirements, and long-term
+                        plans before making a decision.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How should a pool fit into an outdoor area?</h3>
+                    <p>
+                        The pool should work comfortably with the surrounding
+                        layout, leaving suitable space for access and other
+                        outdoor activities.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is maintenance important when planning pools?</h3>
+                    <p>
+                        Yes. Regular care is an important consideration and
+                        should be included when evaluating different pool
+                        options.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Where can I learn more about pool options?</h3>
+                    <p>
+                        Visit the website to explore available
+                        <a href="https://pool.net/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="keyword-link">pool options</a>
+                        and find additional information for your project.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container contact-grid">
+
+            <div class="contact-card">
+                <h2>Contact Information</h2>
+
+                <p>
+                    For questions and further information, you can get in touch
+                    using the contact details provided below.
+                </p>
+
+                <div class="contact-item">
+                    <div>📍</div>
+                    <div>
+                        <strong>Address</strong>
+                        <span>
+                            Otto-Hahn-Ring 9, 64653 Lorsch, Germany
+                        </span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>☎</div>
+                    <div>
+                        <strong>Phone</strong>
+                        <a href="tel:+4962518502110">
+                            +49 (0)6251 850 21 10
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>✉</div>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:info@pool.net">
+                            info@pool.net
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div>🌐</div>
+                    <div>
+                        <strong>Website</strong>
+                        <span>pool.net</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-box">
+                <h2>Explore Pool Options</h2>
+
+                <p>
+                    Get more information about pool-related ideas, solutions,
+                    and planning considerations for creating a comfortable
+                    outdoor space.
+                </p>
+
+                <a href="#home"
+                   class="btn btn-primary"
+                   style="width:max-content;">
+                    Back to Top
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                Pool<span>.Net</span>
+            </div>
+
+            <p>
+                © 2026 Pool.Net. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+```
